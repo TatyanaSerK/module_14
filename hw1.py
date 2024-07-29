@@ -22,7 +22,7 @@ for i in range (1,11): #
 
 # Обновите balance у каждой 2ой записи начиная с 1ой на 500:
 for i in range(1,11):
-    if i % 2 == 0:
+    if i % 2 != 0:
         cursor.execute("UPDATE Users SET balance = ? WHERE id = ?",
                        ('500', f"{i}"))
 
